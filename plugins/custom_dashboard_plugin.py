@@ -8,7 +8,7 @@ custom_page = Blueprint("custom_page", __name__,
                         static_folder='static')
 
 # Defina a rota para a página personalizada
-@custom_page.route("/custom_dashboard")
+@custom_page.route("/stream")
 def custom_dashboard():
     return render_template("custom_dashboard.html")
 
